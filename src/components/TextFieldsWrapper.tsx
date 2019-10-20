@@ -8,6 +8,7 @@ const TextFieldsWrapper = styled.div`
   & > label,
   div {
     color: ${props => props.theme.colors.primary};
+    font-family: ${props => props.theme.font.family};
     margin-bottom: 1rem;
   }
 `;
