@@ -3,3 +3,5 @@ dist
 .DS_Store
 .cache
 React-XSS.code-workspace
+.env
+.env.local

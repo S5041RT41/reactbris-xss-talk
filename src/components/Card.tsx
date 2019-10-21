@@ -5,7 +5,7 @@ const Card = styled.div`
   flex-direction: column;
   background-color: ${props => props.theme.colors.secondary};
   width: 30rem;
-  height: 20rem;
+  height: 25rem;
   position: absolute;
   top: 20%;
   right: 30%;

@@ -2,10 +2,12 @@ import * as React from "react";
 import { render } from "react-dom";
 import { Router } from "react-router";
 import { createBrowserHistory } from "history";
-import { ThemeProvider } from "styled-components";
-import { createGlobalStyle } from "styled-components";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+import axios from "axios";
 import App from "./App";
 import Theme from "./config/theme";
+
+axios.defaults.baseURL = `http://${process.env.SERVER_BASE_URL}`;
 
 const history = createBrowserHistory();
 const GlobalStyle = createGlobalStyle`

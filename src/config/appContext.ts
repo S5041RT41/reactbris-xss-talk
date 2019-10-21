@@ -1,11 +1,18 @@
 import { createContext } from "react";
 import { AppState } from "src/types/app";
 
-const defaultState: AppState = {
-  userName: "",
+export const defaultState: AppState = {
+  user: {
+    password: "",
+    address: "",
+    country: "",
+    creditCard: [],
+    name: "",
+    email: ""
+  },
   gitHubUrl: "",
   onGitHubUrlChange: () => {},
-  onUserNameChange: () => {}
+  onUserChange: () => {}
 };
 
 export default createContext(defaultState);
